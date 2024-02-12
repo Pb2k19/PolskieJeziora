@@ -4,5 +4,6 @@ namespace PolskieJeziora.Services;
 
 public interface ILakesService
 {
-    IEnumerable<Lake> GetLakes();
+    ValueTask<Lake> GetLakeByIdAsync(int id);
+    ValueTask<IEnumerable<Lake>> GetLakesAsync();
 }

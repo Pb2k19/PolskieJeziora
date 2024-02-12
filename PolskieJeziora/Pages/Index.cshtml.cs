@@ -17,9 +17,9 @@ namespace PolskieJeziora.Pages
             LakesService = lakesService;
         }
 
-        public void OnGet()
+        public async Task OnGetAsync()
         {
-            Lakes = LakesService.GetLakes();
+            Lakes = await LakesService.GetLakesAsync();
         }
     }
 }

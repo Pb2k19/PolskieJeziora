@@ -6,7 +6,7 @@
 <PolskieJeziora.Components.ModalDialog @ref="Modal"></PolskieJeziora.Components.ModalDialog>
 
 <div class="card-columns">
-    @foreach (var lake in GetLakesSorted(Mode, ListLenght))
+    @foreach (var lake in lakes)
     {
         <div class="cursorHand card" @onclick="(e => OpenLakeInfo(lake.Id))">
             <div class="card-img" style="background-image: url('@lake.Image');">
@@ -29,24 +29,33 @@
 {
     [Parameter]
     public int Mode { get; set; } = 0;
+
     [Parameter]
     public int ListLenght { get; set; } = 0;
 
-    private PolskieJeziora.Components.ModalDialog Modal { get; set; }
+    private ModalDialog Modal { get; set; }
 
-    void OpenLakeInfo(int id) 
+    private IEnumerable<Lake> lakes = [];
+
+    protected override async Task OnInitializedAsync()
     {
-        Lake selectedLake = LakesService.GetLakes().First(x => x.Id == id);
+        lakes = await GetLakesSortedAsync(Mode, ListLenght);
+    }
+
+    async void OpenLakeInfo(int id)
+    {
+        Lake selectedLake = await LakesService.GetLakeByIdAsync(id);
         Modal.Open(selectedLake);
     }
+
     /// <summary>
     /// Returns sorted IEnumerable of Lakes
     /// </summary>
     /// <param name="mode">0(default) - no sort, 1 - order by descending Area, 2 - order by Id, 3 - order by descending MaxDepth, 4 - order by Name, else no sort</param>
     /// <param name="maxLenght">Max lenght of returned IEnumerable, 0 = original lenght</param>
-    private IEnumerable<Lake> GetLakesSorted(int? mode = 0, int? maxLenght = 0)
+    private async Task<IEnumerable<Lake>> GetLakesSortedAsync(int? mode = 0, int? maxLenght = 0)
     {
-        var lakes = LakesService.GetLakes();
+        var lakes = await LakesService.GetLakesAsync();
         switch (mode)
         {
             case 0:
