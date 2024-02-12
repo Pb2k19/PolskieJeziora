@@ -31,7 +31,7 @@
     public int Mode { get; set; } = 0;
 
     [Parameter]
-    public int ListLenght { get; set; } = 0;
+    public int ListLength { get; set; } = 0;
 
     private ModalDialog Modal { get; set; }
 
@@ -39,7 +39,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        lakes = await GetLakesSortedAsync(Mode, ListLenght);
+        lakes = await GetLakesSortedAsync(Mode, ListLength);
     }
 
     async void OpenLakeInfo(int id)
@@ -52,8 +52,8 @@
     /// Returns sorted IEnumerable of Lakes
     /// </summary>
     /// <param name="mode">0(default) - no sort, 1 - order by descending Area, 2 - order by Id, 3 - order by descending MaxDepth, 4 - order by Name, else no sort</param>
-    /// <param name="maxLenght">Max lenght of returned IEnumerable, 0 = original lenght</param>
-    private async Task<IEnumerable<Lake>> GetLakesSortedAsync(int? mode = 0, int? maxLenght = 0)
+    /// <param name="maxLength">Max length of returned IEnumerable, 0 = original length</param>
+    private async Task<IEnumerable<Lake>> GetLakesSortedAsync(int? mode = 0, int? maxLength = 0)
     {
         var lakes = await LakesService.GetLakesAsync();
         switch (mode)
@@ -75,9 +75,9 @@
             default:
                 break;
         }
-        if (maxLenght > 0)
+        if (maxLength > 0)
         {
-            lakes = lakes.Take(maxLenght.Value);
+            lakes = lakes.Take(maxLength.Value);
         }
         return lakes;
     }
