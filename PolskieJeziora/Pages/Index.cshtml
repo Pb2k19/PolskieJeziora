@@ -1,0 +1,19 @@
+﻿@page
+@using PolskieJeziora.Components
+@model IndexModel
+@{
+    ViewData["Title"] = "Strona główna";
+}
+
+<div>
+    <h1 class="title">Polskie Jeziora</h1>
+    <div class="text-center">
+        <h4 class="text-black-50 text">
+            Szukasz miejsca na wypoczynek? Oto strona poświęcona wybranym polskim jeziorom!
+        </h4>
+    </div>
+</div>
+
+@(await Html.RenderComponentAsync<LakesList>(RenderMode.Server, new {Mode = 4}))
+
+<script src="_framework/blazor.server.js"></script>

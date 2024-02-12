@@ -1,0 +1,75 @@
+﻿@using PolskieJeziora.Models
+@using PolskieJeziora.Services
+@using Microsoft.AspNetCore.Components.Web
+@inject LakesFromJsonService LakesService;
+
+<PolskieJeziora.Components.ModalDialog @ref="Modal"></PolskieJeziora.Components.ModalDialog>
+
+<div class="card-columns">
+    @foreach (var lake in GetLakesSorted(Mode, ListLenght))
+    {
+        <div class="cursorHand card" @onclick="(e => OpenLakeInfo(lake.Id))">
+            <div class="card-img" style="background-image: url('@lake.Image');">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">@lake.Name</h2>
+                @if(Mode == 1)
+                {
+                    <h5>@lake.Area ha</h5>
+                } else if(Mode == 3)
+                {
+                    <h5>@lake.MaxDepth m</h5>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@code 
+{
+    [Parameter]
+    public int Mode { get; set; } = 0;
+    [Parameter]
+    public int ListLenght { get; set; } = 0;
+
+    private PolskieJeziora.Components.ModalDialog Modal { get; set; }
+
+    void OpenLakeInfo(int id) 
+    {
+        Lake selectedLake = LakesService.GetLakes().First(x => x.Id == id);
+        Modal.Open(selectedLake);
+    }
+    /// <summary>
+    /// Returns sorted IEnumerable of Lakes
+    /// </summary>
+    /// <param name="mode">0(default) - no sort, 1 - order by descending Area, 2 - order by Id, 3 - order by descending MaxDepth, 4 - order by Name, else no sort</param>
+    /// <param name="maxLenght">Max lenght of returned IEnumerable, 0 = original lenght</param>
+    private IEnumerable<Lake> GetLakesSorted(int? mode = 0, int? maxLenght = 0)
+    {
+        var lakes = LakesService.GetLakes();
+        switch (mode)
+        {
+            case 0:
+                break;
+            case 1:
+                lakes = lakes.OrderByDescending(lake => lake.Area);
+                break;
+            case 2:
+                lakes = lakes.OrderBy(lake => lake.Id);
+                break;
+            case 3:
+                lakes = lakes.OrderByDescending(lake => lake.MaxDepth);
+                break;
+            case 4:
+                lakes = lakes.OrderBy(lake => lake.Name);
+                break;
+            default:
+                break;
+        }
+        if (maxLenght > 0)
+        {
+            lakes = lakes.Take(maxLenght.Value);
+        }
+        return lakes;
+    }
+}

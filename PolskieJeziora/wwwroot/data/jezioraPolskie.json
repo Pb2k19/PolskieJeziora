@@ -1,0 +1,102 @@
+[
+	{
+		"Id": 1,
+		"Name": "Śniardwy",
+		"MaxDepth": 23.4,
+		"Area": 11340.4,
+		"Location": "Warmińsko - mazurskie",
+		"Description": "Jest to największe jezioro w Polsce. Znajduje się w województwie warmińsko-mazurskim, w dorzeczu Pisy. Jest to jezioro polodowcowe, którego lustro wody znajduje się na wysokości 116 m n.p.m. W wielu miejscach płytkie dno jeziora usiane jest głazami narzutowymi, które kryją się tuż pod powierzchnią wody stwarzając zagrożenie w żegludze.",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/1/14/Sniardwy_jezioro.jpeg",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150974.666667246!2d21.607964771037057!3d53.75425404201207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e1f1f2c8d70ce5%3A0x7b265177dfd17615!2zxZpuaWFyZHd5!5e0!3m2!1spl!2spl!4v1641232882910!5m2!1spl!2spl"
+	},
+	{
+		"Id": 2,
+		"Name": "Mamry",
+		"MaxDepth": 43.8,
+		"Area": 10282.4,
+		"Location": "Warmińsko - mazurskie",
+		"Description": "Mamry jest to drugie pod względem powierzchni jezioro w Polsce. Dno jeziora jest zróżnicowane z licznymi zagłębieniami i wypłyceniami, przy czym część północna jest wyraźnie głębsza, dno porasta roślinność wynurzona i łąki podwodne złożone z ramienic. Brzegi jeziora przeważnie niskie i podmokłe.",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Dargin.jpg/1280px-Dargin.jpg",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74720.07300514058!2d21.625984091732015!3d54.18003543480094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e22b80b3ee02f7%3A0x1fa27560e3eb3b48!2sJezioro%20Mamry!5e0!3m2!1spl!2spl!4v1641233002985!5m2!1spl!2spl"
+	},
+	{
+		"Id": 3,
+		"Name": "Łebsko",
+		"MaxDepth": 6.3,
+		"Area": 7140.0,
+		"Location": "Pomorskie",
+		"Description": "Łebsko położone jest w województwie pomorskim, na obszarze powiatu słupskiego i lęborskiego, na terenie Słowińskiego Parku Narodowego. Powierzchnia jeziora stanowi 21,8% całkowitej powierzchni parku oraz 33,1% powierzchni lądowej. Jezioro powstało poprzez podniesienie poziomu morza i zalanie łąk - nigdy nie było zatoką morską.",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Łebsko_lake_01.jpg/1280px-Łebsko_lake_01.jpg",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147512.0229769316!2d17.270590139350873!3d54.711815998752485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fe71181f747a83%3A0xdbb077e4f9227366!2zxYFlYnNrbw!5e0!3m2!1spl!2spl!4v1641233080726!5m2!1spl!2spl"
+	},
+	{
+		"Id": 4,
+		"Name": "Dąbie",
+		"MaxDepth": 10,
+		"Area": 5408.0,
+		"Location": "Zachodniopomorskie",
+		"Description": "Dąbie to jezioro deltowe w Dolinie Dolnej Odry. Znajduje się w województwie zachodniopomorskim, w całości granicach Szczecina. Powierzchnia obejmuje 5408 ha, co stanowi 4. miejsce w Polsce i 1. w województwie. Przez jezioro przebiega tor wodny z portu Schwedt do Zatoki Pomorskiej. Nad Dąbiem zlokalizowanych jest kilka obiektów żeglarskich.",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Jezioro_Dabie_brzeg_poludniowy.jpg/1280px-Jezioro_Dabie_brzeg_poludniowy.jpg",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152131.30535956973!2d14.534471332730961!3d53.431784825754605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa0a984acbf9d9%3A0x12d4474dd8b7433b!2zRMSFYmll!5e0!3m2!1spl!2spl!4v1641233178735!5m2!1spl!2spl"
+	},
+	{
+		"Id": 5,
+		"Name": "Miedwie",
+		"MaxDepth": 43.8,
+		"Area": 3527.0,
+		"Location": "Zachodniopomorskie",
+		"Description": "Miedwie znajduje się w południowo-wschodniej części Pobrzeża Szczecińskiego. Powierzchnia zwierciadła wody obejmuje 3527 ha i jest to piąte co do wielkości jezioro w Polsce. Jezioro leży na wysokości 14 m n.p.m., a jego maksymalna głębokość wynosi 43,8 m, co daje największą w Polsce kryptodepresję(29,8 m p.p.m.). Linia brzegowa ma długość ok. 39 km, brzegi są bezleśne, w południowej części bagniste. W okolicach Żelewa znajduje się ujęcie wody pitnej dla mieszkańców Szczecina.",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Jezioro_Miedwie.jpg/1280px-Jezioro_Miedwie.jpg",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152673.5592911158!2d14.75467141386795!3d53.2801413767674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700b102f2b41efb%3A0x35c5766546d8bfca!2sMiedwie!5e0!3m2!1spl!2spl!4v1641233225663!5m2!1spl!2spl"
+	},
+	{
+		"Id": 6,
+		"Name": "Hańcza",
+		"MaxDepth": 108.5,
+		"Area": 311.4,
+		"Location": "Podlaskie",
+		"Description": "Hańcza jest położona na Pojezierzu Wschodniosuwalskim. Jest to najgłębsze jezioro w Polsce i w całej środkowej części Niżu Europejskiego. Jest to polodowcowe jezioro rynnowe, na brzegach są liczne głazy, niektóre o kilkumetrowej szerokości. Nagromadzenie głazów jest tak znaczne, że sprawiają wrażenie celowo ułożonych. Dno jeziora o znacznym nachyleniu (około 12°).",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Jezioro_Hańcza%2C_widok_na_północ.jpg",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37284.63014308653!2d22.77576056154289!3d54.26345802629454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e110996a272741%3A0x5e715688c0f83914!2zSGHFhGN6YQ!5e0!3m2!1spl!2spl!4v1641233309372!5m2!1spl!2spl"
+	},
+	{
+		"Id": 7,
+		"Name": "Drawsko",
+		"MaxDepth": 79.7,
+		"Area": 1781.5,
+		"Location": "Zachodniopomorskie",
+		"Description": "Drawsko jest położone na Pojezierzu Drawskim, w woj. zachodniopomorskim. Przez jezioro Drawsko przepływa rzeka Drawa. Na jeziorze znajduje się 12 wysp, największa z nich to Bielawa, która jest piątą wyspą jeziorną w Polsce pod względem wielkości. Zwierciadło wody znajduje się na wysokości 128,7 m.n.p.m. Drawsko powstało w miejscu skrzyżowania się kilku głębokich rynien polodowcowych.",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Jezioro_Drawsko_%281%29.jpg",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75751.27939065098!2d16.098340659718254!3d53.60724445404596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47010948e042e789%3A0x37ff27e0d010330d!2sDrawsko!5e0!3m2!1spl!2spl!4v1641233362077!5m2!1spl!2spl"
+	},
+	{
+		"Id": 8,
+		"Name": "Wielki Staw",
+		"MaxDepth": 79.3,
+		"Area": 34.14,
+		"Location": "Małopolskie",
+		"Description": "Wielki Staw Polski jest najgłębszym i najdłuższym (998 m) jeziorem w Tatrach. Jest to największa pojemność jeziora w Tatrach (jego pojemność stanowi 1/3 pojemności wszystkich jezior tatrzańskich). Brzegi porasta kosodrzewina, której zarośla powoli zwiększają powierzchnię po dawnych zniszczeniach spowodowanych gospodarką pasterską. Uwagę turystów zwraca pojedynczy okaz modrzewia kilkumetrowej wysokości.",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/WielkiStawPolski.jpg",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10426.315131757288!2d20.030905529973754!3d49.20854966917098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47158ba70b329cfb%3A0xc2c3e7b0d7195061!2sWielki%20Staw!5e0!3m2!1spl!2spl!4v1641233432530!5m2!1spl!2spl"
+	},
+	{
+		"Id": 9,
+		"Name": "Wigry",
+		"MaxDepth": 74.2,
+		"Area": 2118.3,
+		"Location": "Podlskie",
+		"Description": "Wigry to jezioro rynnowe położone w północno-wschodniej Polsce - w województwie podlaskim na terenie Wigierskiego Parku Narodowego. Powstało w wyniku ostatniego zlodowacenia 14 000 lat przed naszą erą. Wigry kształtem przypominają literę „S”. Brzegi jeziora mają w większości miejsc pierwotny charakter, nie zmieniony przez człowieka. W 1975 roku jezioro Wigry wpisane zostało przez Międzynarodową Unię Ochrony Przyrody (IUCN) na listę najcenniejszych akwenów świata.",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Jezioro_Wigry_i_malownicze_niebo_nad_nim.JPG",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74971.87374427996!2d23.002086933915514!3d54.040555152210764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e0feb22883a047%3A0xa1008e1ee612305f!2sJezioro%20Wigry!5e0!3m2!1spl!2spl!4v1641233471303!5m2!1spl!2spl"
+	},
+	{
+		"Id": 10,
+		"Name": "Wdzydze",
+		"MaxDepth": 69.5,
+		"Area": 1455.6,
+		"Location": "Pomorskie",
+		"Description": "Wdzydze zwane również kaszubskim morzem jest to jezioro w Borach Tucholskich. Cały akwen objęty jest obszarem Wdzydzkiego Parku Krajobrazowego. Na podstawie badań z 2001 roku wody jeziora zaliczono do II klasy czystości.",
+		"Image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Borsk%2C_pusto_nad_Wdzydzami.jpg",
+		"Map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75084.39226931056!2d17.835465180422503!3d53.97814798778522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47027018e6a1d793%3A0xa05c0f02598caca5!2sJezioro%20Wdzydze!5e0!3m2!1spl!2spl!4v1641233510601!5m2!1spl!2spl"
+	}
+]

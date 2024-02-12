@@ -1,0 +1,20 @@
+﻿@page
+@using PolskieJeziora.Components
+@model PolskieJeziora.Pages.RankingModel
+@{
+	ViewData["Title"] = "Ranking";
+}
+
+<div>
+    <h1 class="title">Ranking</h1>
+</div>
+<div>
+	<h3 class="subTitle">Największa powierzchnia</h3>
+	@(await Html.RenderComponentAsync<LakesList>(RenderMode.Server, new {Mode = 1, ListLenght = 5}))
+</div>
+<div>
+	<h3 class="subTitle">Największa maksymalna głębokość</h3>
+	@(await Html.RenderComponentAsync<LakesList>(RenderMode.Server, new {Mode = 3, ListLenght = 5}))
+</div>
+
+<script src="_framework/blazor.server.js"></script>

@@ -1,0 +1,153 @@
+.checked {
+    color: blue;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 52px;
+}
+
+.subTitle {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+}
+
+.card {
+    display: inline-block;
+    width: 235px;
+    vertical-align: bottom;
+    margin: 5px
+}
+
+.card-columns .card-body {
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    background: #fbfafd;
+}
+
+.card-columns .card-img {
+    height: 500px;
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal .card-img {
+    height: 500px;
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.card-columns .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+}
+
+a.navbar-brand {
+    white-space: normal;
+    font-family: 'Lobster', cursive;
+    font-size: xx-large;
+    text-align: center;
+    word-break: break-all;
+}
+
+a {
+    color: lightgray;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 1);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footerText {
+    color: white;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-navbar {
+    background: linear-gradient(90deg, #1b9ea5 10%, #0b666c 70%);
+}
+
+.bg-footer {
+    background: linear-gradient(110deg, #10666b 10%, #219da3 70%);
+}
+
+.cursorHand {
+    cursor: pointer;
+}
+
+.sourceList{
+
+}
+.sourceList li a{
+    color: black;
+    font-size: 28px;
+}

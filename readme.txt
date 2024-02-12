@@ -1,0 +1,1 @@
+Strona została stworzona w .NET 6.0. W celu uruchomienia projektu należy użyć programu Visual Studio 2022. Wcześniejsze wersje programu Visual Studio mogą działać nieprawidłowo - strona nie uruchomi się przez błędy kompilacji.

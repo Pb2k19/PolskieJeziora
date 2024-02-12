@@ -1,0 +1,61 @@
+﻿@using PolskieJeziora.Models
+@using Microsoft.AspNetCore.Components.Web
+
+<div class="modal @ModalClass" tabindex="-1" role="dialog" style="display:@ModalDisplay">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">@CurrentLake?.Name</h3>
+                <button @onclick="()=>Close()" class="btn-close"> </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                     <div class ="card-img" style="background-image: url('@CurrentLake?.Image');"></div>
+                </div>
+                <h4>Informajce</h4>
+                <ul>
+                    <li>Powierzchnia: @CurrentLake?.Area ha</li>
+                    <li>Województwo: @CurrentLake?.Location</li>
+                    <li>Maksymalna głębokość: @CurrentLake?.MaxDepth m</li>
+                </ul>
+                <h4>Opis</h4>
+                <p>@CurrentLake?.Description</p>
+                <h4>Mapa</h4>
+                <div>
+                    <iframe src="@CurrentLake?.Map" width= "450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@if (ShowBackdrop)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code 
+{
+    public string ModalClass { get; set; } = "";
+    public bool ShowBackdrop { get; set; } = false;
+    public string ModalDisplay { get; set; } = "none;";
+    public Lake CurrentLake { get; set; }
+
+    public void Open(Lake lake)
+    {
+        ShowBackdrop = true;
+        ModalDisplay = "block;";
+        ModalClass = "Show";        
+        CurrentLake = lake;
+        StateHasChanged();
+    }
+
+    public void Close()
+    {
+        ShowBackdrop = false;
+        ModalDisplay = "none";
+        ModalClass = "";        
+        StateHasChanged();
+    }
+}
