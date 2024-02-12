@@ -8,18 +8,10 @@ namespace PolskieJeziora.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public ILakesService LakesService;
-        public IEnumerable<Lake> Lakes { get; private set; }
 
         public IndexModel(ILogger<IndexModel> logger, ILakesService lakesService)
         {
             _logger = logger;
-            LakesService = lakesService;
-        }
-
-        public async Task OnGetAsync()
-        {
-            Lakes = await LakesService.GetLakesAsync();
         }
     }
 }
