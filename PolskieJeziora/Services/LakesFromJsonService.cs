@@ -3,8 +3,10 @@ using System.Text.Json;
 
 namespace PolskieJeziora.Services
 {
-    public class LakesFromJsonService
+    public class LakesFromJsonService : ILakesService
     {
+        private readonly JsonSerializerOptions jsonOptions = new() { PropertyNameCaseInsensitive = true };
+
         public IWebHostEnvironment WebHostEnvironment { get; }
 
         protected string JsonFileName
@@ -20,8 +22,7 @@ namespace PolskieJeziora.Services
         public IEnumerable<Lake> GetLakes()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
-            return JsonSerializer.Deserialize<Lake[]>(jsonFileReader.ReadToEnd(), 
-                            new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            return JsonSerializer.Deserialize<Lake[]>(jsonFileReader.ReadToEnd(), jsonOptions);
         }
     }
 }
